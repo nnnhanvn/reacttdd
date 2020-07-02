@@ -16,6 +16,17 @@ describe("Img", () => {
             true
         );
     });
+
+    it("has the expected static styles", () => {
+        expect(mounted).toHaveStyleRule("width", "100%");
+        expect(mounted).toHaveStyleRule("object-fit", "cover");
+    });
+
+    it("uses imgHeight as the height style property", () => {
+        expect(mounted).toHaveStyleRule("height", "500");
+        mounted.setProps({ imgHeight: "calc(100vh - 100px)" });
+        expect(mounted).toHaveStyleRule("height", "calc(100vh - 100px)");
+    });
 });
 
 describe("CarouselSlide()", () => {

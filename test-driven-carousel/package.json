@@ -33,6 +33,7 @@
         "eslint-plugin-react": "^7.20.1",
         "html-webpack-plugin": "^4.3.0",
         "jest": "^26.1.0",
+        "jest-styled-components": "^7.0.2",
         "prettier-eslint-cli": "^4.7.1",
         "react-dom": "^16.13.1",
         "styled-components": "^5.1.1",
