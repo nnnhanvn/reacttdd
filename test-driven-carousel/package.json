@@ -16,6 +16,11 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "husky": {
+        "hooks": {
+            "pre-commit": "eslint ."
+        }
+    },
     "devDependencies": {
         "@babel/cli": "^7.10.3",
         "@babel/core": "^7.10.3",
@@ -33,6 +38,7 @@
         "eslint-plugin-jest": "^22.1.2",
         "eslint-plugin-react": "^7.20.1",
         "html-webpack-plugin": "^4.3.0",
+        "husky": "^4.2.5",
         "jest": "^26.1.0",
         "jest-styled-components": "^7.0.2",
         "prettier-eslint-cli": "^4.7.1",
